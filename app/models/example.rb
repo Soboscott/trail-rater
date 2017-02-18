@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-class Example < ApplicationRecord
+class Trail < ApplicationRecord
   belongs_to :user
-  validates :text, :user, presence: true
+  validates :trail_name, :location, :comment, presence: true
 end

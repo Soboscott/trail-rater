@@ -1,7 +1,7 @@
 # frozen_string_literal: true
-class CreateExamples < ActiveRecord::Migration
+class CreateTrails < ActiveRecord::Migration
   def change
-    create_table :examples do |t|
+    create_table :trails do |t|
       t.text :text, null: false
       t.references :user, index: true, foreign_key: true, null: false
 

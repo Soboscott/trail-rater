@@ -8,16 +8,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-trail = Trails.create([{ trail_name: 'Long Trail' },
-                       { location: 'Big Bear Country' },
-                       { trail_name: 'Short Trail' },
-                       { location: 'Small Bear Country' },
-                       { trail_name: 'Just Right Trail' },
-                       { location: 'Chicago' }])
-
-user = Users.create([{ frist_name: 'Pappa' }, { last_name: 'Bear' },
-                     { email: 'bigpappa@goldy.lox' }, { password: 'xxx' },
-                     { frist_name: 'Mamma' }, { last_name: 'Bear' },
-                     { email: 'smallmamma@goldy.lox' }, { password: 'ooo' },
-                     { frist_name: 'Baby' }, { last_name: 'Bear' },
-                     { email: 'carl@goldy.lox' }, { password: 'yyy' }])
+# trail = Trails.create([{ trail_name: 'Long Trail' },
+#                        { location: 'Big Bear Country' },
+#                        { trail_name: 'Short Trail' },
+#                        { location: 'Small Bear Country' },
+#                        { trail_name: 'Just Right Trail' },
+#                        { location: 'Chicago' }])
+#
+# user = Users.create([{ frist_name: 'Pappa' }, { last_name: 'Bear' },
+#                      { email: 'bigpappa@goldy.lox' }, { password: 'xxx' },
+#                      { frist_name: 'Mamma' }, { last_name: 'Bear' },
+#                      { email: 'smallmamma@goldy.lox' }, { password: 'ooo' },
+#                      { frist_name: 'Baby' }, { last_name: 'Bear' },
+#                      { email: 'carl@goldy.lox' }, { password: 'yyy' }])

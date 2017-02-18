@@ -6,7 +6,8 @@ RSpec.describe TrailsController do
   def trail_params
     {
       trail_name: 'Long Trail',
-      location: ' Big Bear Country'
+      location: ' Big Bear Country',
+      comment: 'this trail is too long'
     }
   end
 
@@ -73,7 +74,7 @@ RSpec.describe TrailsController do
       expect(response.body).to be_empty
     end
     it 'updates an article' do
-      expect(trail[:traail_name]).to eq(trail_diff[:trail_name])
+      expect(trail[:trail_name]).to eq(trail_diff[:trail_name])
     end
   end
   describe 'POST create' do
