@@ -1,9 +1,176 @@
 <!DOCTYPE html>
 <html>
 
-<title>Trail-Rater</title>
+<head>
+  <title>Back Woods Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Gloria+Hallelujah" rel="stylesheet">
+
+
+  <!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+
+
 <body>
-<h1>Trail Runner</h1>
+
+  <div class="container-fluid headertop">
+    <h1 class="titlesize">Old Man Scott's</h1>
+    <h3 class="subtitle">Tic Tac Toe</h3>
+  </div>
+
+
+  <!---->
+
+  <nav class="navbar navbar-inverse topmenu" role="navigation">
+    <div class="container-fluid">
+
+
+      <ul class="nav navbar-nav">
+        <li id="sign-up-btb" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>First timers</b> </a>
+          <ul id="sign-up1" class="dropdown-menu topdropdownmenu">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+
+
+                  <form id="sign-up">
+                    <fieldset>
+                      <label>
+                          Yer electric name
+                          <input type="text" name="credentials[email]">
+                      </label>
+                      <label>
+                          Yer secret code
+                          <input type="password" name="credentials[password]">
+                      </label>
+                      <label>
+                          Jusitn case doit a-gin
+                          <input type="password" name="credentials[password_confirmation]">
+                      </label>
+                      <input id="startGame" type="submit" name="submit" value="Lets go!" button="color-change">
+                    </fieldset>
+                  </form>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown signinhide">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Returnin folks</b> </a>
+          <ul id="sign-in1" class="dropdown-menu topdropdownmenu">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+
+
+                  <form id="sign-in">
+                    <fieldset>
+
+                      <label>
+                          Yer electric name<br>
+                          <input type="text" name="credentials[email]">
+                        </label>
+                      <label>
+                          Secrit codie-thing<br>
+                          <input type="password" name="credentials[password]">
+                        </label>
+                      <input type="submit" name="submit" value="lets go!" button="color-change">
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown changebtn">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Change Yer secret codie</b> </a>
+          <ul id="change-password1" class="dropdown-menu topdropdownmenu">
+            <li>
+              <div class="row">
+                <div id="hidePass" class="col-md-12">
+
+
+                  <form id="change-password">
+                    <fieldset>
+
+                      <label>
+                        The one you gots<br>
+                        <input type="password" name="passwords[old]">
+                      </label><br>
+                      <label>
+                        the one y'gonna 'member<br>
+                        <input type="password" name="passwords[new]">
+                      </label>
+
+                      <input type="submit" name="submit" value="u gonna change it t'that?" button="color-change">
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!---->
+
+        <li>
+          <a href="#" id="reset" class="  resetG"><b>git T'playin</b> </a>
+        </li>
+        <li>
+          <a href="#" id="getGame" class="  resetG"><b>Whos winnin</b> </a>
+        </li>
+        <li>
+          <a href="#" id="sign-out" class="  "><b>M'out</b> </a>
+        </li>
+
+
+        <!---->
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <div id="logs">
+    <h2 class="win"></h2>
+    <h4 class="history"></h4>
+  </div>
+
+  <div class="container" id='wrapper'>
+    <a> href="http://i.imgur.com/iGHpCGG.jpn</a>
+    <div class="gameboard">
+      <div class="row">
+        <div class="col-xs-4 side1 cg box" id="0">0</div>
+        <div class="col-xs-4 side2 cg box" id="1">1</div>
+        <div class="col-xs-4 side3 cg box" id="2">2</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 side4 cg box" id="3">3</div>
+        <div class="col-xs-4 side5 cg box" id="4">4</div>
+        <div class="col-xs-4 side6 cg box" id="5">5</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 side7 cg box" id="6">6</div>
+        <div class="col-xs-4 side8 cg box" id="7">7</div>
+        <div class="col-xs-4 side9 cg box" id="8">8</div>
+      </div>
+    </div>
+  </div>
+
+
+  <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 </body>
 
 </html>

@@ -1,2 +1,0 @@
-class Trail < ApplicationRecord
-end
