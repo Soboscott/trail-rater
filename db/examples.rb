@@ -10,16 +10,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-%w(antony jeff matt jason).each do |name|
-  email = "#{name}@#{name}.com"
-  next if User.exists? email: email
-  User.create!(email: email,
-               password: 'abc123',
-               password_confirmation: nil)
-end
-Trails.create!(trail_name: 'Long Trail', location: 'Big Bear Country')
-Trails.create!(trail_name: 'Short Trail', location: 'Small Bear Country')
-Trails.create!(trail_name: 'Just Right Trail', location: 'Chicago')
+# %w(antony jeff matt jason).each do |name|
+#   email = "#{name}@#{name}.com"
+#   next if User.exists? email: email
+#   User.create!(email: email,
+#                password: 'abc123',
+#                password_confirmation: nil)
+# end
+# Trails.create!(trail_name: 'Long Trail', location: 'Big Bear Country')
+# Trails.create!(trail_name: 'Short Trail', location: 'Small Bear Country')
+# Trails.create!(trail_name: 'Just Right Trail', location: 'Chicago')
 
 # user = Users.create([{ first_name: 'Pappa', last_name: 'Bear',
 #                      email: 'bigpappa@goldy.lox', password: 'xxx' },

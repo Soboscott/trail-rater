@@ -58,7 +58,7 @@ RSpec.describe TrailsController, type: :controller do
   #     expect(assigns(:trail)).to be_a_new(Trail)
   #   end
   # end
-
+  #
   # describe 'GET #edit' do
   #   it 'assigns the requested trail as @trail' do
   #     trail = Trail.create! valid_attributes
@@ -101,52 +101,6 @@ RSpec.describe TrailsController, type: :controller do
         post :create, params: { trail: invalid_attributes },
                       session: valid_session
         expect(response).to render_template('new')
-      end
-    end
-  end
-
-  describe 'PUT #update' do
-    context 'with valid params' do
-      let(:new_attributes) do
-        skip('Add a hash of attributes valid for your model')
-      end
-
-      it 'updates the requested trail' do
-        trail = Trail.create! valid_attributes
-        put :update, params: { id: trail.to_param, trail: new_attributes },
-                     session: valid_session
-        trail.reload
-        skip('Add assertions for updated state')
-      end
-
-      it 'assigns the requested trail as @trail' do
-        trail = Trail.create! valid_attributes
-        put :update, params: { id: trail.to_param, trail: valid_attributes },
-                     session: valid_session
-        expect(assigns(:trail)).to eq(trail)
-      end
-
-      it 'redirects to the trail' do
-        trail = Trail.create! valid_attributes
-        put :update, params: { id: trail.to_param, trail: valid_attributes },
-                     session: valid_session
-        expect(response).to redirect_to(trail)
-      end
-    end
-
-    context 'with invalid params' do
-      it 'assigns the trail as @trail' do
-        trail = Trail.create! valid_attributes
-        put :update, params: { id: trail.to_param, trail: invalid_attributes },
-                     session: valid_session
-        expect(assigns(:trail)).to eq(trail)
-      end
-
-      it "re-renders the 'edit' template" do
-        trail = Trail.create! valid_attributes
-        put :update, params: { id: trail.to_param, trail: invalid_attributes },
-                     session: valid_session
-        expect(response).to render_template('edit')
       end
     end
   end
