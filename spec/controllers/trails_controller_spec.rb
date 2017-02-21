@@ -59,13 +59,13 @@ RSpec.describe TrailsController, type: :controller do
   #   end
   # end
 
-  describe 'GET #edit' do
-    it 'assigns the requested trail as @trail' do
-      trail = Trail.create! valid_attributes
-      get :edit, params: { id: trail.to_param }, session: valid_session
-      expect(assigns(:trail)).to eq(trail)
-    end
-  end
+  # describe 'GET #edit' do
+  #   it 'assigns the requested trail as @trail' do
+  #     trail = Trail.create! valid_attributes
+  #     get :edit, params: { id: trail.to_param }, session: valid_session
+  #     expect(assigns(:trail)).to eq(trail)
+  #   end
+  # end
 
   describe 'POST #create' do
     context 'with valid params' do

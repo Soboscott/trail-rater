@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
+  resources :comments
   resources :trails
   resources :posts
   resources :examples, except: [:new, :edit]
