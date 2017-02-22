@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170221171140) do
+ActiveRecord::Schema.define(version: 20170221212400) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,10 @@ ActiveRecord::Schema.define(version: 20170221171140) do
     t.string   "comments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.integer  "trails_id"
+    t.index ["trails_id"], name: "index_reviews_on_trails_id", using: :btree
+    t.index ["user_id"], name: "index_reviews_on_user_id", using: :btree
   end
 
   create_table "trails", force: :cascade do |t|
@@ -46,4 +50,6 @@ ActiveRecord::Schema.define(version: 20170221171140) do
   end
 
   add_foreign_key "examples", "users"
+  add_foreign_key "reviews", "trails", column: "trails_id"
+  add_foreign_key "reviews", "users"
 end
