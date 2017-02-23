@@ -10,26 +10,23 @@ I told them that I could do something like that but I asked if there were anythi
     The medium one said “I want to be able to change my password from time to time.”
     The small one said “At this point I’m just looking to check out!”
 
-## Plan your tables and columns
+## tables and columns
 
-What tables will you need? What will the columns on the table be?
+The tables I used were User, Trails and Reviews
 http://i.imgur.com/gX45Wxh.jpg
+
+## Wireframes
+http://i.imgur.com/tqJPABI.jpg?1
 
 ## Create an ERD (entity relationship diagram)
 
 These are the diagrams that show how your tables are related to one another.
 (one to many, many to many, ect).
-http://i.imgur.com/Y0gHHbU.jpg
-
-## Routing
-
-What routes will you need to be able to make the proper request to your API?
-this is an example:
-GET https://ridb.recreation.gov/api/v1/organizations/
+http://i.imgur.com/NSfzGJk.jpg?1
 
 ## 3rd Party APIs
 
-Do you plan to use any, if so what are they?
+
  Recreation Information Database (RIDB) Application Programming Interface (API).
  Authentication
 
@@ -40,50 +37,3 @@ The RIDB API allows two approaches for authentication with the API key:
 In an HTTP header that looks like the following: apikey:thisIsMyKey
 In a URL parameter that looks like the following: ?apikey=thisIsMyKey
  You must replace thisIsMyKey with your personal API key found on your RIDB profile page.
-
-
-## Wireframes
-
-Please create a wireframe of your planned front end.
-http://i.imgur.com/cCjhrQx.jpg?1
-## Timetable
-
-Write a basic timetable for yourself, you don't have to stick to it but it
-helps to go in with a plan.
-Day 1
-project idea
-user stories
-model the erd
-create wireframe
-model the routes
-reach out for help when I get stuck
-
-Day 2
-start hacking:
-build the model test commit often
-reach out for help when I get stuck
-Day 3
-build the controllers  test commit often
-build the serializer tets commit often
-reach out for help when I get stuck
-
-Day 4
-a day to catch up
-test
-reach out for help when I get stuck
-
-Day 5
-HTML test commit often
-reach out for help when I get stuck
-
-Day 6
-Css
-bootstrap
-handlebars
-test commit often
-reach out for help when I get stuck
-
-Day 7
-test
-reach out for help when I get stuck
-SLEEP
