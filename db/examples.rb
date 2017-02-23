@@ -17,3 +17,13 @@
 #                password: 'abc123',
 #                password_confirmation: nil)
 # end
+# Trails.create!(trail_name: 'Long Trail', location: 'Big Bear Country')
+# Trails.create!(trail_name: 'Short Trail', location: 'Small Bear Country')
+# Trails.create!(trail_name: 'Just Right Trail', location: 'Chicago')
+
+# user = Users.create([{ first_name: 'Pappa', last_name: 'Bear',
+#                      email: 'bigpappa@goldy.lox', password: 'xxx' },
+#                      { first_name: 'Mamma', last_name: 'Bear',
+#                        email: 'smallmamma@goldy.lox', password: 'ooo' },
+#                      { first_name: 'Baby', last_name: 'Bear',
+#                      email: 'carl@goldy.lox', password: 'yyy' }])
