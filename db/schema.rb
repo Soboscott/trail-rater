@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20170221212400) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
-    t.integer  "trails_id"
-    t.index ["trails_id"], name: "index_reviews_on_trails_id", using: :btree
+    t.integer  "trail_id"
+    t.index ["trail_id"], name: "index_reviews_on_trail_id", using: :btree
     t.index ["user_id"], name: "index_reviews_on_user_id", using: :btree
   end
 
@@ -50,6 +50,6 @@ ActiveRecord::Schema.define(version: 20170221212400) do
   end
 
   add_foreign_key "examples", "users"
-  add_foreign_key "reviews", "trails", column: "trails_id"
+  add_foreign_key "reviews", "trails"
   add_foreign_key "reviews", "users"
 end

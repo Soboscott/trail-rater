@@ -37,3 +37,8 @@ The RIDB API allows two approaches for authentication with the API key:
 In an HTTP header that looks like the following: apikey:thisIsMyKey
 In a URL parameter that looks like the following: ?apikey=thisIsMyKey
  You must replace thisIsMyKey with your personal API key found on your RIDB profile page.
+
+ ## Additional modifications
+ I would like to add some additional features like:
+ being able to search trails by state, park, trail name.
+ 
