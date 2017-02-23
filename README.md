@@ -12,7 +12,8 @@ I told them that I could do something like that but I asked if there were anythi
     The small one said “At this point I’m just looking to check out!”
 
 
-## live website: https://soboscott.github.io/trail-rater/
+## live website:
+https://soboscott.github.io/browser-template/
 
 ## tables and columns
 
