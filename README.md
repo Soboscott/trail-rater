@@ -1,7 +1,7 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 ## User Story:
-I was out in the forest merrily running along when I came across three entrepreneurs.  They specialize in start up web companies.  I told them I was a web developer and they said “well that’s a coincidence we were out for a walk while our dinner was cooling off and were wishing there were an app that could help us keep track of the trails we like.” I said well tell me what you would like in the app.
+I was out in the forest merrily running along when I came across three entrepreneurs.  They specialize in start up web companies.  I told them I was a web developer and they said “well that’s a coincidence we were out for a walk while our dinner was cooling off and were wishing there were an app that could help us review the trails we like.” I said well tell me what you would like in the app.
     The big one said “I would like an app where I can review trails I have been on.”
     The medium one said “I would like an app that I could update or delete my musings for the trails on my list.”
     The small one said” I would like an app that I could see specific reviews on the trails I have on my list.”
@@ -13,7 +13,7 @@ I told them that I could do something like that but I asked if there were anythi
 ## tables and columns
 
 The tables I used were User, Trails and Reviews
-http://i.imgur.com/gX45Wxh.jpg
+http://i.imgur.com/oTnfCXE.jpg
 
 ## Wireframes
 http://i.imgur.com/tqJPABI.jpg?1
