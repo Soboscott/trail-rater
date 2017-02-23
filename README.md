@@ -10,6 +10,8 @@ I told them that I could do something like that but I asked if there were anythi
     The medium one said “I want to be able to change my password from time to time.”
     The small one said “At this point I’m just looking to check out!”
 
+## live website: https://soboscott.github.io/trail-rater/
+
 ## tables and columns
 
 The tables I used were User, Trails and Reviews
@@ -41,4 +43,3 @@ In a URL parameter that looks like the following: ?apikey=thisIsMyKey
  ## Additional modifications
  I would like to add some additional features like:
  being able to search trails by state, park, trail name.
- 
