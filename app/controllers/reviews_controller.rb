@@ -20,6 +20,7 @@ class ReviewsController < OpenReadController
     end
   end
 
+
   # DELETE /reviews/1
   def destroy
     @review.destroy
