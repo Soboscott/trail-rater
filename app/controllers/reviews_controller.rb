@@ -19,9 +19,8 @@ class ReviewsController < OpenReadController
       render json: @review.errors, status: :unprocessable_entity
     end
   end
-
-
   # DELETE /reviews/1
+
   def destroy
     @review.destroy
   end
