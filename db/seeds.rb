@@ -8,7 +8,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-trail = Trails.create([{ trail_name: 'Long Trail' },
+trail = Trail.create([{ trail_name: 'Long Trail' },
                        { trail_name: 'Short Trail' },
                        { trail_name: 'Just Right Trail' }])
 # #
