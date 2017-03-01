@@ -8,9 +8,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-trail = Trail.create([{ trail_name: 'Long Trail' },
-                       { trail_name: 'Short Trail' },
-                       { trail_name: 'Just Right Trail' }])
+trail = Trail.create([{ name: 'Long Trail' },
+                       { name: 'Short Trail' },
+                       { name: 'Just Right Trail' }])
 # #
 # user = Users.create([{ frist_name: 'Pappa' }, { last_name: 'Bear' },
 #                      { email: 'bigpappa@goldy.lox' }, { password: 'xxx' },
