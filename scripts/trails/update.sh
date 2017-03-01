@@ -6,8 +6,8 @@ curl "${API}${URL_PATH}" \
   --request PATCH \
   --header "Content-Type: application/json" \
   --data '{
-    "trail_name": {
-      "trail_name": "'"${TRAIL_NAME}"'",
+    "": {
+      "": "'"${}"'",
     }
   }'
    #\
