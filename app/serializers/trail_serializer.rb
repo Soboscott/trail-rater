@@ -1,3 +1,3 @@
 class TrailSerializer < ActiveModel::Serializer
-  attributes :id, :trail_name
+  attributes :id, :name
 end
