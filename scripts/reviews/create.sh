@@ -10,7 +10,7 @@ curl "${API}${URL_PATH}" \
     "review": {
       "comments": "'"${COMMENT}"'",
       "trail_id": "'"${TRAIL_ID}"'",
-      "user_id": "'"${USER_ID}"'"
+      # "user_id": "'"${USER_ID}"'"
     }
   }'
 
