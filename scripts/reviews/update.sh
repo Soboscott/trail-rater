@@ -1,5 +1,5 @@
 #!/bin/bash
-API="${API_ORIGIN:-http://trail-rater.herokuapp.com}"
+API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/reviews"
 curl "${API}${URL_PATH}" \
   --include \
