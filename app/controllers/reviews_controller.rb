@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 class ReviewsController < OpenReadController
-  before_action :set_review, only: [:destroy]
+  before_action :set_review, only: [:show, :index, :destroy]
 
   # GET /reviews
   def index
@@ -14,7 +14,7 @@ class ReviewsController < OpenReadController
     @review = current_user.reviews.build(review_params)
 
     if @review.save
-      render json: @review, status: :created, location: @review
+      render json: @review, status: :created
     else
       render json: @review.errors, status: :unprocessable_entity
     end

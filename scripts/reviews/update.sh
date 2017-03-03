@@ -3,14 +3,14 @@ API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/reviews"
 curl "${API}${URL_PATH}" \
   --include \
-  --request PATCH \
+  --request Patch \
   --header "Content-Type: application/json" \
+  --header "Authorization: Token token=$TOKEN" \
   --data '{
     "review": {
-      "comment": "'"${comment}"'",
+      "comments": "'"${COMMENT}"'",
+      "trail_id": "'"${TRAIL_ID}"'"
     }
   }'
-   #\
-  # --header "Authorization: Token token=$TOKEN"
 
 echo
