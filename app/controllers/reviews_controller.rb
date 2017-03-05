@@ -32,7 +32,7 @@ class ReviewsController < OpenReadController
     @review = current_user.reviews.find(params[:id])
   end
 
-  # Only allow a trusted parameter "white list" through.
+  # Only allow a trusted parameter through.
   def review_params
     params.require(:review).permit(:comments, :trail_id)
   end

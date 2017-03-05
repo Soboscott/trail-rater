@@ -9,8 +9,8 @@ curl "${API}${URL_PATH}" \
   --data '{
     "review": {
       "comments": "'"${COMMENT}"'",
-      "trail_id": "'"${TRAIL_ID}"'"
-    }
-  }'
-
+      "date_seen": "'"${DATESEEN}"'",
+          "location": "'"${LOCATION}"'",
+        }
+      }'
 echo

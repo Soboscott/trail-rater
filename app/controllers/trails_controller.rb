@@ -1,6 +1,17 @@
 # frozen_string_literal: true
 class TrailsController < OpenReadController
-  before_action :set_trail, only: [:show]
+  before_action :set_trail, only: [:post, :show, :index]
+
+  # POST /trails
+  def create
+    @trail = current_user.trails.build(trail_params)
+
+    if @trail.save
+      render json: @trail, status: :created
+    else
+      render json: @trail.errors, status: :unprocessable_entity
+    end
+  end
 
   # GET /trails
   def index
