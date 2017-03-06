@@ -12,37 +12,32 @@ I told them that I could do something like that but I asked if there were anythi
     The small one said “At this point I’m just looking to check out!”
 
 
-## live website:
+## Live website:
 https://soboscott.github.io/browser-template/
-
+back end https://trail-rater.herokuapp.com/
 ## tables and columns
 
-The tables I used were User, Trails and Reviews
+## Backend repo:
+https://github.com/Soboscott/trail-rater
+
+## front end repo:
+https://github.com/Soboscott/browser-template
+
+
+## The tables I used were User, Trails and Reviews
 http://i.imgur.com/oTnfCXE.jpg
 
 ## Wireframes
 http://i.imgur.com/tqJPABI.jpg?1
 
-## Create an ERD (entity relationship diagram)
+## ERD (entity relationship diagram)
 
-These are the diagrams that show how your tables are related to one another.
-(one to many, many to many, ect).
 http://i.imgur.com/NSfzGJk.jpg?1
 
-## 3rd Party APIs
-
-
- Recreation Information Database (RIDB) Application Programming Interface (API).
- Authentication
-
-The RIDB API uses keys to allow access. Registration is free and your key is available to you immediately upon registration. Register for an API key here.
-
-The RIDB API allows two approaches for authentication with the API key:
-
-In an HTTP header that looks like the following: apikey:thisIsMyKey
-In a URL parameter that looks like the following: ?apikey=thisIsMyKey
- You must replace thisIsMyKey with your personal API key found on your RIDB profile page.
 
  ## Additional modifications
  I would like to add some additional features like:
- being able to search trails by state, park, trail name.
+    1. Adding a adtabase from the Recreation Information Database (RIDB).
+    2. Creating a  search functions to search by reviewer.
+    3. Adding visual styles such as animation and images.
+  
