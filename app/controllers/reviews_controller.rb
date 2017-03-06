@@ -34,6 +34,7 @@ class ReviewsController < OpenReadController
 
   # Only allow a trusted parameter through.
   def review_params
-    params.require(:review).permit(:comments, :trail_id)
+    params.require(:review).permit(:comment)
   end
+  # private :review_params
 end
